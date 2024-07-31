@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="public/img/Ellipse 2.png" alt="Icon" />
+
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact us</a>
+      <a href="getstarted.html"> Get started</a>
+    </div>
+
+    <div class="services">
+      <h1 style="font-size: 50px">OUR SERVICES</h1>
+      <img id="slide" src="public/img/serv3.png" alt="slideshow" />
+    </div>
+    <script>
+      // Array of background images
+      const images = [
+        "url(public/img/serv1.png)",
+        "url(public/img/serv2.png)",
+        "url(public/img/serv3.png)",
+        // Add more image URLs as needed
+      ];
+      let currentIndex = 0;
+
+      function changeImage() {
+        const imgElement = document.getElementById("slide");
+        currentIndex = (currentIndex + 1) % images.length;
+        imgElement.src = images[currentIndex];
+      }
+
+      // Change image every 3 seconds (3000 milliseconds)
+      setInterval(changeImage, 3000);
+    </script>
+  </body>
+</html>

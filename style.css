@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  /* Full viewport height */
+  color: white;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  font-style: Saira SemiCondensed;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Semi-transparent background for the navbar */
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Make sure navbar is above other content */
+  font-size: 30px;
+  background-color: rgb(14, 14, 58);
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+.home {
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%; /* Padding to ensure content isn't hidden under the fixed navbar */
+  padding-bottom: 10%; /* Padding to ensure content isn't hidden under the fixed navbar */
+  justify-content: center;
+}
+
+.about {
+  background-color: rgb(14, 14, 59);
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%; /* Padding to ensure content isn't hidden under the fixed navbar */
+  padding-bottom: 7%;
+  justify-content: center;
+}
+
+.services {
+  background-color: rgb(19, 19, 77);
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%; /* Padding to ensure content isn't hidden under the fixed navbar */
+  padding-bottom: 7%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.para {
+  font-size: 25px;
+}
+
+#image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.getstarted {
+  background-color: rgb(19, 19, 77);
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%; /* Padding to ensure content isn't hidden under the fixed navbar */
+  padding-bottom: 7%;
+}
+
+.form-container {
+  color: black;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.form-group textarea {
+  resize: vertical;
+}
+.form-group button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #218838;
+}

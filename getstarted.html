@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get started</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="public/img/Ellipse 2.png" alt="Icon" />
+
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact us</a>
+      <a href="getstarted.html"> Get started</a>
+    </div>
+    <div class="getstarted">
+      <h1>GET IN TOUCH</h1>
+      <h2>
+        Got a question?We'd love to hear from you. send a message and we'll
+        response you as soon as possible
+      </h2>
+
+      <div class="form-container">
+        <form id="dataForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phno">Phone number:</label>
+            <input type="number" id="phno" name="phno" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="sub" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="your comment">your comment:</label>
+            <textarea
+              id="your comment"
+              name="comments"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="button" onclick="submitForm()">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <script>
+        function submitForm() {
+          var form = document.getElementById("dataForm");
+          var formData = new FormData(form);
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbx4Ny1PFmiqabwqa57ibGVccq2L57vNHgMAoByQtBaEkYdSglbW43IAJNBv7RO9Aymy/exec",
+            {
+              method: "POST",
+              body: formData,
+            }
+          )
+            .then((response) => response.text())
+            .then((result) => {
+              alert("Form submitted successfully!");
+              form.reset();
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        }
+      </script>
+    </div>
+  </body>
+</html>

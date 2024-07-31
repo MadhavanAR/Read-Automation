@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="public/img/Ellipse 2.png" alt="Icon" />
+
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact us</a>
+      <a href="getstarted.html"> Get started</a>
+    </div>
+    <div class="home">
+      <h1 style="font-size: 50px">
+        <span style="color: white">READ</span
+        ><span style="color: rgb(67, 183, 221)"> AUTOMATION</span>
+      </h1>
+      <h2 style="font-size: 30px">
+        <span style="color: rgb(67, 183, 221)">Innovate</span> your world
+      </h2>
+      <p style="font-size: 25px">
+        At READ Automation, our dedicated team is committed to addressing the
+        unique requirements of each customer. We specialize in delivering
+        tailored smart robotics and automation solutions that align with
+        individual needs. Through our unwavering commitment, we strive to
+        consistently provide the highest level of service to our valued clients.
+        Feel free to reach out to us today to initiate a discussion regarding
+        your specific robotics and automation needs; we look forward to the
+        opportunity to assist you
+      </p>
+    </div>
+
+    <script>
+      // Array of background images
+      const images = [
+        "url(public/img/bg1.png)",
+        "url(public/img/bg2.png)",
+        "url(public/img/bg3.png)",
+      ];
+
+      let currentIndex = 0;
+
+      function changeBackgroundImage() {
+        //const container = document.getElementById("home");
+        // Set the background image to the next one in the array
+        document.body.style.backgroundImage = images[currentIndex];
+
+        // Update the index to the next image, wrapping around to the start
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+
+      // Change background image every 3 seconds (3000 milliseconds)
+      setInterval(changeBackgroundImage, 3000);
+
+      // Initial background image
+      changeBackgroundImage();
+    </script>
+  </body>
+</html>
