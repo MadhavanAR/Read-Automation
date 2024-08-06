@@ -3,65 +3,252 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-
+    <title>Read Automations</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
-      <img src="public/img/Ellipse 2.png" alt="Icon" />
+      <img src="public/icon/Ellipse 2.png" alt="Icon" />
 
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="clients.html">Clients</a>
-      <a href="contact.html">Contact us</a>
-      <a href="getstarted.html"> Get started</a>
+      <a href="#home">Home</a>
+      <a href="#about">About us</a>
+      <a href="#clients">Clients</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#contact">Get Started</a>
     </div>
-    <div class="home">
-      <h1 style="font-size: 50px">
-        <span style="color: white">READ</span
-        ><span style="color: rgb(67, 183, 221)"> AUTOMATION</span>
-      </h1>
-      <h2 style="font-size: 30px">
-        <span style="color: rgb(67, 183, 221)">Innovate</span> your world
-      </h2>
-      <p style="font-size: 25px">
-        At READ Automation, our dedicated team is committed to addressing the
-        unique requirements of each customer. We specialize in delivering
-        tailored smart robotics and automation solutions that align with
-        individual needs. Through our unwavering commitment, we strive to
-        consistently provide the highest level of service to our valued clients.
-        Feel free to reach out to us today to initiate a discussion regarding
-        your specific robotics and automation needs; we look forward to the
-        opportunity to assist you
+
+    <div id="home" class="hero">
+      <img
+        src="public/img/bg/bg1.png"
+        class="active"
+        alt="Background Image 1"
+      />
+      <img src="public/img/bg/bg2.png" alt="Background Image 2" />
+      <img src="public/img/bg/bg3.png" alt="Background Image 3" />
+      <div class="herocontent">
+        <h1>
+          <span style="color: white">READ</span
+          ><span style="color: rgb(67, 183, 221)"> AUTOMATION</span>
+        </h1>
+        <h2 style="font-size: 40px">
+          <span style="color: rgb(67, 183, 221)">Innovate</span> your world
+        </h2>
+        <p>
+          At READ Automation, our dedicated team is committed to addressing the
+          unique requirements of each customer. We specialize in delivering
+          tailored smart robotics and automation solutions that align with
+          individual needs. Through our unwavering commitment, we strive to
+          consistently provide the highest level of service to our valued
+          clients. Feel free to reach out to us today to initiate a discussion
+          regarding your specific robotics and automation needs; we look forward
+          to the opportunity to assist you
+        </p>
+      </div>
+    </div>
+
+    <div id="about" class="section">
+      <h1>ABOUT US</h1>
+      <img src="public/img2.png" class="centerimg" />
+      <p>
+        READ Automation stands as a dynamic and forward-thinking enterprise
+        committed to delivering cutting-edge Industry 4.0 solutions across
+        diverse industries. Our focus lies in furnishing tailor-made,
+        cost-effective robotics and industrial automation solutions, designed to
+        optimized operational efficiency. Additionally, we offer expertise in
+        Internet of Things integration and mechanical fabrication solutions.
+        Complementing our services, we conduct comprehensive training programs
+        covering a spectrum of Industry 4.0 related topics.
       </p>
     </div>
 
-    <script>
-      // Array of background images
-      const images = [
-        "url(public/img/bg1.png)",
-        "url(public/img/bg2.png)",
-        "url(public/img/bg3.png)",
-      ];
+    <div id="services" class="section">
+      <h1>Services</h1>
+      <h2>OUR SERVICES -</h2>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="public/services/serv2.png" alt="Image 1" />
+            <div class="text-overlay">
+              <h2>ROBOTIC AND AUTOMATION</h2>
+              We excel in crafting tailored robotics and automation solutions,
+              from PLC programming to Quality Monitoring systems, industrial
+              robots, and more. Our goal is to boost efficiency without breaking
+              the bank!
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/services/serv1.png" alt="Image 2" />
+            <div class="text-overlay">
+              <h2>INTERNET OF THINGS</h2>
+              At our subsidiary steel fabrication firm founded in 2010, we craft
+              custom steel items to match your needs. Specializing in mechanical
+              parts, we deliver precisely what you require. With a capacity of
+              1500 tons annually, we guarantee top-notch, on-time results!
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/services/serv3.png" alt="Image 3" />
+            <div class="text-overlay">
+              <h2>MECHANICAL FABRICATION</h2>
+              Our promise: Cutting-edge solutions for remote monitoring and
+              control via IoT services, customized to fit your needs perfectly!
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
+        <button class="next" aria-label="Next Slide">&rsaquo;</button>
+      </div>
+      <h2>IT SOLUTIONS -</h2>
 
-      let currentIndex = 0;
+      <div class="slider" id="slider2">
+        <div class="slides">
+          <div class="slide">
+            <img src="public/serv2/a1.png" alt="Image 1" />
+            <div class="text-overlay">
+              Boost your online visibility and drive organic traffic with our
+              SEO optimization strategies. We optimize your website to rank
+              higher on search engines, attracting quality leads and increasing
+              your online presence. Stay ahead of the competition and reach your
+              target audience effectively with our proven SEO techniques.
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/serv2/a2.png" alt="Image 2" />
+            <div class="text-overlay">
+              Embark on a digital journey with our web development services that
+              blend creativity and functionality. We design and build websites
+              that not only look stunning but also deliver seamless user
+              experiences, ensuring your online presence stands out in the
+              digital landscape.
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/serv2/a3.png" alt="Image 3" />
+            <div class="text-overlay">
+              Transform your online store into a thriving business with our
+              E-commerce solutions. From user-friendly interfaces to secure
+              payment gateways, we create seamless shopping experiences that
+              drive sales and elevate your brand in the competitive E-commerce
+              market.
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/serv2/a4.png" alt="Image 4" />
+            <div class="text-overlay">
+              Transforming ideas into visual masterpieces, our graphic design
+              services bring creativity and innovation to your brand. From logos
+              to marketing materials, we craft designs that speak volumes and
+              leave a lasting impact on your audience.
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/serv2/a5.png" alt="Image 5" />
+            <div class="text-overlay">
+              Define your brand identity and stand out in the market with our
+              branding solutions. We craft unique brand strategies that resonate
+              with your target audience, building trust, loyalty, and
+              recognition for your brand in a crowded marketplace.
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/serv2/a6.png" alt="Image 6" />
+            <div class="text-overlay">
+              Tell your brand's story with captivating content that resonates
+              with your audience. Our content creation services craft compelling
+              narratives, engaging visuals, and informative resources to keep
+              your audience hooked and drive meaningful interactions with your
+              brand.
+            </div>
+          </div>
+          <div class="slide">
+            <img src="public/serv2/a7.png" alt="Image 7" />
+            <div class="text-overlay">
+              Engage and grow your online community with our social media
+              marketing expertise. We develop tailored strategies to boost your
+              brand's presence on social platforms, drive engagement, and foster
+              meaningful connections with your audience, ultimately driving
+              business growth and success.
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+        <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
+        <button class="next" aria-label="Next Slide">&rsaquo;</button>
+      </div>
+    </div>
 
-      function changeBackgroundImage() {
-        //const container = document.getElementById("home");
-        // Set the background image to the next one in the array
-        document.body.style.backgroundImage = images[currentIndex];
+    <div id="Portfolio" class="section">
+      <h1>PORTFOLIO</h1>
+    </div>
+    <div id="clients" class="section">
+      <h1>Clients</h1>
 
-        // Update the index to the next image, wrapping around to the start
-        currentIndex = (currentIndex + 1) % images.length;
-      }
+      <div class="scroll-container">
+        <div class="scroll-images">
+          <img src="public/clients/client 2 1.png" alt="Image 1" />
+          <img src="public/clients/client 3 1.png" alt="Image 2" />
+          <img src="public/clients/client 4 1.png" alt="Image 3" />
+          <img src="public/clients/client 5 1.png" alt="Image 4" />
+          <!-- duplicates -->
+          <img src="public/clients/client 2 1.png" alt="Image 1" />
+          <img src="public/clients/client 3 1.png" alt="Image 2" />
+          <img src="public/clients/client 4 1.png" alt="Image 3" />
+          <img src="public/clients/client 5 1.png" alt="Image 4" />
+        </div>
+      </div>
+    </div>
 
-      // Change background image every 3 seconds (3000 milliseconds)
-      setInterval(changeBackgroundImage, 3000);
+    <div id="contact" class="section">
+      <h1>GET IN TOUCH</h1>
 
-      // Initial background image
-      changeBackgroundImage();
-    </script>
+
+      <h2>
+        Got a question?We'd love to hear from you. send a message and we'll
+        response you as soon as possible
+      </h2>
+
+      <div class="form-container">
+        <form id="dataForm">
+          <div class="form-group">
+            <label for="name">NAME:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="phno">PHONE NUMBER:</label>
+            <input type="number" id="phno" name="phno" required />
+          </div>
+          <div class="form-group">
+            <label for="email">EMAIL-ID:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">SUBJECT:</label>
+            <input type="text" id="sub" name="subject" required />
+          </div>
+          <div class="form-group comment">
+            <label for="your comment">YOUR COMMENT:</label>
+            <textarea
+              id="your comment"
+              name="comments"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="button" onclick="submitForm()">SUBMIT </button>
+          </div>
+        </form> 
+      </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
