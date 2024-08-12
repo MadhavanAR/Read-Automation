@@ -9,27 +9,24 @@
       href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <img src="public/icon/Ellipse 2.png" alt="Icon" />
 
       <a href="#home">Home</a>
       <a href="#about">About us</a>
-      <a href="#clients">Clients</a>
       <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
       <a href="#contact">Contact Us</a>
       <a href="#contact">Get Started</a>
     </div>
 
     <div id="home" class="hero">
-      <img
-        src="public/img/bg/bg1.png"
-        class="active"
-        alt="Background Image 1"
-      />
-      <img src="public/img/bg/bg2.png" alt="Background Image 2" />
-      <img src="public/img/bg/bg3.png" alt="Background Image 3" />
       <div class="herocontent">
         <h1>
           <span style="color: white">READ</span
@@ -67,124 +64,165 @@
     </div>
 
     <div id="services" class="section">
-      <h1>Services</h1>
-      <h2>OUR SERVICES -</h2>
-      <div class="slider">
-        <div class="slides">
-          <div class="slide">
-            <img src="public/services/serv2.png" alt="Image 1" />
-            <div class="text-overlay">
-              <h2>ROBOTIC AND AUTOMATION</h2>
-              We excel in crafting tailored robotics and automation solutions,
-              from PLC programming to Quality Monitoring systems, industrial
-              robots, and more. Our goal is to boost efficiency without breaking
-              the bank!
+      <h1>SERVICES</h1>
+      <h2>ROBOTIC AND AUTOMATION -</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="public/services/serv2.png" alt="Image 1" />
+              <div class="text-overlay">
+                <h2>ROBOTIC AND AUTOMATION</h2>
+                We excel in crafting tailored robotics and automation solutions,
+                from PLC programming to Quality Monitoring systems, industrial
+                robots, and more. Our goal is to boost efficiency without
+                breaking the bank!
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/services/serv1.png" alt="Image 2" />
-            <div class="text-overlay">
-              <h2>INTERNET OF THINGS</h2>
-              At our subsidiary steel fabrication firm founded in 2010, we craft
-              custom steel items to match your needs. Specializing in mechanical
-              parts, we deliver precisely what you require. With a capacity of
-              1500 tons annually, we guarantee top-notch, on-time results!
+            <div class="slide">
+              <img src="public/services/serv3.png" alt="Image 2" />
+              <div class="text-overlay">
+                <h2>INTERNET OF THINGS</h2>
+                At our subsidiary steel fabrication firm founded in 2010, we
+                craft custom steel items to match your needs. Specializing in
+                mechanical parts, we deliver precisely what you require. With a
+                capacity of 1500 tons annually, we guarantee top-notch, on-time
+                results!
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/services/serv3.png" alt="Image 3" />
-            <div class="text-overlay">
-              <h2>MECHANICAL FABRICATION</h2>
-              Our promise: Cutting-edge solutions for remote monitoring and
-              control via IoT services, customized to fit your needs perfectly!
+            <div class="slide">
+              <img src="public/services/serv1.png" alt="Image 3" />
+              <div class="text-overlay">
+                <h2>MECHANICAL FABRICATION</h2>
+                Our promise: Cutting-edge solutions for remote monitoring and
+                control via IoT services, customized to fit your needs
+                perfectly!
+              </div>
             </div>
+            <!-- Add more slides as needed -->
           </div>
-          <!-- Add more slides as needed -->
+          <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
+          <button class="next" aria-label="Next Slide">&rsaquo;</button>
         </div>
-        <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
-        <button class="next" aria-label="Next Slide">&rsaquo;</button>
+        <div class="dots"></div>
+        <!-- Dots container moved outside -->
       </div>
       <h2>IT SOLUTIONS -</h2>
-
-      <div class="slider" id="slider2">
-        <div class="slides">
-          <div class="slide">
-            <img src="public/serv2/a1.png" alt="Image 1" />
-            <div class="text-overlay">
-              Boost your online visibility and drive organic traffic with our
-              SEO optimization strategies. We optimize your website to rank
-              higher on search engines, attracting quality leads and increasing
-              your online presence. Stay ahead of the competition and reach your
-              target audience effectively with our proven SEO techniques.
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img src="public/serv2/a1.png" alt="Image 1" />
+              <div class="text-overlay">
+                Boost your online visibility and drive organic traffic with our
+                SEO optimization strategies. We optimize your website to rank
+                higher on search engines, attracting quality leads and
+                increasing your online presence. Stay ahead of the competition
+                and reach your target audience effectively with our proven SEO
+                techniques.
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/serv2/a2.png" alt="Image 2" />
-            <div class="text-overlay">
-              Embark on a digital journey with our web development services that
-              blend creativity and functionality. We design and build websites
-              that not only look stunning but also deliver seamless user
-              experiences, ensuring your online presence stands out in the
-              digital landscape.
+            <div class="slide">
+              <img src="public/serv2/a2.png" alt="Image 2" />
+              <div class="text-overlay">
+                Embark on a digital journey with our web development services
+                that blend creativity and functionality. We design and build
+                websites that not only look stunning but also deliver seamless
+                user experiences, ensuring your online presence stands out in
+                the digital landscape.
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/serv2/a3.png" alt="Image 3" />
-            <div class="text-overlay">
-              Transform your online store into a thriving business with our
-              E-commerce solutions. From user-friendly interfaces to secure
-              payment gateways, we create seamless shopping experiences that
-              drive sales and elevate your brand in the competitive E-commerce
-              market.
+            <div class="slide">
+              <img src="public/serv2/a3.png" alt="Image 3" />
+              <div class="text-overlay">
+                Transform your online store into a thriving business with our
+                E-commerce solutions. From user-friendly interfaces to secure
+                payment gateways, we create seamless shopping experiences that
+                drive sales and elevate your brand in the competitive E-commerce
+                market.
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/serv2/a4.png" alt="Image 4" />
-            <div class="text-overlay">
-              Transforming ideas into visual masterpieces, our graphic design
-              services bring creativity and innovation to your brand. From logos
-              to marketing materials, we craft designs that speak volumes and
-              leave a lasting impact on your audience.
+            <div class="slide">
+              <img src="public/serv2/a4.png" alt="Image 4" />
+              <div class="text-overlay">
+                Transforming ideas into visual masterpieces, our graphic design
+                services bring creativity and innovation to your brand. From
+                logos to marketing materials, we craft designs that speak
+                volumes and leave a lasting impact on your audience.
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/serv2/a5.png" alt="Image 5" />
-            <div class="text-overlay">
-              Define your brand identity and stand out in the market with our
-              branding solutions. We craft unique brand strategies that resonate
-              with your target audience, building trust, loyalty, and
-              recognition for your brand in a crowded marketplace.
+            <div class="slide">
+              <img src="public/serv2/a5.png" alt="Image 5" />
+              <div class="text-overlay">
+                Define your brand identity and stand out in the market with our
+                branding solutions. We craft unique brand strategies that
+                resonate with your target audience, building trust, loyalty, and
+                recognition for your brand in a crowded marketplace.
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/serv2/a6.png" alt="Image 6" />
-            <div class="text-overlay">
-              Tell your brand's story with captivating content that resonates
-              with your audience. Our content creation services craft compelling
-              narratives, engaging visuals, and informative resources to keep
-              your audience hooked and drive meaningful interactions with your
-              brand.
+            <div class="slide">
+              <img src="public/serv2/a6.png" alt="Image 6" />
+              <div class="text-overlay">
+                Tell your brand's story with captivating content that resonates
+                with your audience. Our content creation services craft
+                compelling narratives, engaging visuals, and informative
+                resources to keep your audience hooked and drive meaningful
+                interactions with your brand.
+              </div>
             </div>
-          </div>
-          <div class="slide">
-            <img src="public/serv2/a7.png" alt="Image 7" />
-            <div class="text-overlay">
-              Engage and grow your online community with our social media
-              marketing expertise. We develop tailored strategies to boost your
-              brand's presence on social platforms, drive engagement, and foster
-              meaningful connections with your audience, ultimately driving
-              business growth and success.
+            <div class="slide">
+              <img src="public/serv2/a7.png" alt="Image 7" />
+              <div class="text-overlay">
+                Engage and grow your online community with our social media
+                marketing expertise. We develop tailored strategies to boost
+                your brand's presence on social platforms, drive engagement, and
+                foster meaningful connections with your audience, ultimately
+                driving business growth and success.
+              </div>
             </div>
+            <!-- Add more slides as needed -->
           </div>
-          <!-- Add more slides as needed -->
+          <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
+          <button class="next" aria-label="Next Slide">&rsaquo;</button>
         </div>
-        <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
-        <button class="next" aria-label="Next Slide">&rsaquo;</button>
+        <div class="dots"></div>
+        <!-- Dots container moved outside -->
       </div>
     </div>
-
     <div id="Portfolio" class="section">
       <h1>PORTFOLIO</h1>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="public/portfolios/WhatsApp Image 2024-08-08 at 11.51.32 AM.jpeg"
+                alt="Image 1"
+                style="width: 100%; height: auto"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="public/portfolios/WhatsApp Image 2024-08-08 at 11.51.32 AM.jpeg"
+                alt="Image 2"
+                style="width: 100%; height: auto"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="public/portfolios/WhatsApp Image 2024-08-08 at 11.51.32 AM.jpeg"
+                alt="Image 3"
+                style="width: 100%; height: auto"
+              />
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
+          <button class="next" aria-label="Next Slide">&rsaquo;</button>
+        </div>
+        <div class="dots"></div>
+        <!-- Dots container moved outside -->
+      </div>
     </div>
     <div id="clients" class="section">
       <h1>Clients</h1>
@@ -206,7 +244,6 @@
 
     <div id="contact" class="section">
       <h1>GET IN TOUCH</h1>
-
 
       <h2>
         Got a question?We'd love to hear from you. send a message and we'll
@@ -241,12 +278,54 @@
             ></textarea>
           </div>
           <div class="form-group">
-            <button type="button" onclick="submitForm()">SUBMIT </button>
+            <button type="button" onclick="submitForm()">SUBMIT</button>
           </div>
-        </form> 
+        </form>
       </div>
+    </div>
 
+    <div id="footer" class="footer">
+      <!-- Footer -->
+      <footer>
+        <div class="background-area" id="21">
+          <div class="company-name">
+            <h1>
+              <span style="color: white">READ</span
+              ><span style="color: rgb(67, 183, 221)"> AUTOMATIONS</span>
+            </h1>
+          </div>
+        </div>
+        <div class="contact-info">
+          <strong>Address:</strong>
+          <div class="address">
+            <div>
+              Registered Office<br />6 & 7A, G1, 5th Main Road,<br />BHEL Nagar,
+              Medavakkam,<br />Chennai - 600 100.
+            </div>
+            <div style="margin-left: 25px">
+              Branch Office / Factory<br />No: 765, Kalivarthangal,
 
+              <br />Gugaiyanallore PO, Ranipet,
+
+              <br />Tiruvalam - 632 515.
+            </div>
+          </div>
+          <div>
+            <strong>Phone:</strong><br /><a
+              >+91 999 471 6855 / +91 44 7969 6685</a
+            >
+          </div>
+          <div>
+            <strong>Email:</strong><br /><a href="info@readautomation.com"
+              >info@readautomation.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>|
+          <a href="#">Terms of Service</a>
+        </div>
+      </footer>
     </div>
 
     <script src="index.js"></script>
