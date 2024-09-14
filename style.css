@@ -470,7 +470,7 @@ align-items: center;
     font-size: 20px;
     padding: 8px 0;
     flex-direction: column;
-    align-content: flex-end;
+    align-items: flex-end;
   }
 
   .navbar a {
