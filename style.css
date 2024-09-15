@@ -447,3 +447,202 @@ align-items: center;
 .footer{
   background: #02001a; /* Semi-transparent background */
 }
+
+@media (max-width: 1024px) {
+  .slider {
+    height: 60vh;
+  }
+
+  .text-overlay {
+    font-size: 20px;
+  }
+
+  .slider-container {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .slide img {
+    object-fit: contain;
+  }
+
+  .navbar {
+    font-size: 20px;
+    padding: 8px 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .section h1 {
+    font-size: 35px;
+  }
+
+  .form-container {
+    font-size: 20px;
+  }
+
+  .centerimg {
+    width: 80%;
+    height: 380px;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    font-size: 24px;
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-end; 
+  }
+
+  .navbar img {
+    position: right;
+    align-items: flex-end;
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 0 5%;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  .section {
+    padding: 40px 50px;
+  }
+
+  .section h1 {
+    font-size: 45px;
+  }
+
+  .section p {
+    font-size: 24px;
+  }
+
+  .section h2 {
+    font-size: 35px;
+  }
+
+  .slider {
+    height: 60vh;
+  }
+
+  .slider-container {
+    height: 70vh;
+  }
+
+  .scroll-container {
+    height: 150px;
+  }
+
+  .scroll-images img {
+    width: 150px;
+    margin-right: 50px;
+  }
+
+  .form-container {
+    font-size: 22px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .form-group button {
+    width: 20%;
+    font-size: 18px;
+  }
+
+  .address-container {
+    flex-direction: column;
+  }
+
+  .address-container a {
+    font-size: 18px;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .centerimg{
+    width: 80%;
+    height: 80%;
+  }
+
+  #icon1,
+  #icon2 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .slider {
+    height: 50vh;
+  }
+
+  .text-overlay {
+    font-size: 10px;
+    width: 40%;
+    height: 20%;
+  }
+
+  .slider-container {
+    width: 75vw;
+    height: 55vh;
+  }
+
+  .slide img {
+    object-fit: contain;
+  }
+
+  .navbar {
+    font-size: 18px;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .section h1 {
+    font-size: 30px;
+  }
+
+  .form-container {
+    font-size: 18px;
+  }
+
+  .centerimg {
+    width: 80%;
+    height: 80%;
+  }
+}
