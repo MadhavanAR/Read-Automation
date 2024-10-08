@@ -1,333 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Read Automations</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="navbar" id="navbar">
-      <img src="public/icon/Ellipse 2.png" alt="Icon" />
 
-      <a href="#home">Home</a>
-      <a href="#about">About us</a>
-      <a href="#services">Services</a>
-      <a href="#clients">Clients</a>
-      <a href="#contact">Contact Us</a>
-      <a href="#contact">Get Started</a>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desinic - Get Best UI Design</title>
 
-    <div id="home" class="hero">
-      <div class="herocontent">
-        <h1>
-          <span style="color: white">READ</span
-          ><span style="color: rgb(67, 183, 221)"> AUTOMATION</span>
-        </h1>
-        <h2 style="font-size: 40px">
-          <span style="color: rgb(67, 183, 221)">Innovate</span> your world
-        </h2>
-        <p>
-          At READ Automation, our dedicated team is committed to addressing the
-          unique requirements of each customer. We specialize in delivering
-          tailored smart robotics and automation solutions that align with
-          individual needs. Through our unwavering commitment, we strive to
-          consistently provide the highest level of service to our valued
-          clients. Feel free to reach out to us today to initiate a discussion
-          regarding your specific robotics and automation needs; we look forward
-          to the opportunity to assist you
-        </p>
-      </div>
-    </div>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
 
-    <div id="about" class="section">
-      <h1>ABOUT US</h1>
-      <img src="public/img2.png" class="centerimg" />
-      <p>
-        READ Automation stands as a dynamic and forward-thinking enterprise
-        committed to delivering cutting-edge Industry 4.0 solutions across
-        diverse industries. Our focus lies in furnishing tailor-made,
-        cost-effective robotics and industrial automation solutions, designed to
-        optimized operational efficiency. Additionally, we offer expertise in
-        Internet of Things integration and mechanical fabrication solutions.
-        Complementing our services, we conduct comprehensive training programs
-        covering a spectrum of Industry 4.0 related topics.
-      </p>
-    </div>
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-    <div id="services" class="section">
-      <h1>SERVICES</h1>
-      <h2>ROBOTIC AND AUTOMATION -</h2>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slides">
-            <div class="slide">
-              <img src="public/services/serv2.png" alt="Image 1" />
-              <div class="text-overlay">
-                <h2>ROBOTIC AND AUTOMATION</h2>
-                We excel in crafting tailored robotics and automation solutions,
-                from PLC programming to Quality Monitoring systems, industrial
-                robots, and more. Our goal is to boost efficiency without
-                breaking the bank!
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/services/serv3.png" alt="Image 2" />
-              <div class="text-overlay">
-                <h2>INTERNET OF THINGS</h2>
-                At our subsidiary steel fabrication firm founded in 2010, we
-                craft custom steel items to match your needs. Specializing in
-                mechanical parts, we deliver precisely what you require. With a
-                capacity of 1500 tons annually, we guarantee top-notch, on-time
-                results!
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/services/serv1.png" alt="Image 3" />
-              <div class="text-overlay">
-                <h2>MECHANICAL FABRICATION</h2>
-                Our promise: Cutting-edge solutions for remote monitoring and
-                control via IoT services, customized to fit your needs
-                perfectly!
-              </div>
-            </div>
-            <!-- Add more slides as needed -->
-          </div>
-          <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
-          <button class="next" aria-label="Next Slide">&rsaquo;</button>
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <img src="./assets/images/logo.png" class="logo"></img>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Desinic</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
         </div>
-        <div class="dots"></div>
-        <!-- Dots container moved outside -->
-      </div>
-      <h2>IT SOLUTIONS -</h2>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slides">
-            <div class="slide">
-              <img src="public/serv2/a1.png" alt="Image 1" />
-              <div class="text-overlay">
-                Boost your online visibility and drive organic traffic with our
-                SEO optimization strategies. We optimize your website to rank
-                higher on search engines, attracting quality leads and
-                increasing your online presence. Stay ahead of the competition
-                and reach your target audience effectively with our proven SEO
-                techniques.
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/serv2/a2.png" alt="Image 2" />
-              <div class="text-overlay">
-                Embark on a digital journey with our web development services
-                that blend creativity and functionality. We design and build
-                websites that not only look stunning but also deliver seamless
-                user experiences, ensuring your online presence stands out in
-                the digital landscape.
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/serv2/a3.png" alt="Image 3" />
-              <div class="text-overlay">
-                Transform your online store into a thriving business with our
-                E-commerce solutions. From user-friendly interfaces to secure
-                payment gateways, we create seamless shopping experiences that
-                drive sales and elevate your brand in the competitive E-commerce
-                market.
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/serv2/a4.png" alt="Image 4" />
-              <div class="text-overlay">
-                Transforming ideas into visual masterpieces, our graphic design
-                services bring creativity and innovation to your brand. From
-                logos to marketing materials, we craft designs that speak
-                volumes and leave a lasting impact on your audience.
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/serv2/a5.png" alt="Image 5" />
-              <div class="text-overlay">
-                Define your brand identity and stand out in the market with our
-                branding solutions. We craft unique brand strategies that
-                resonate with your target audience, building trust, loyalty, and
-                recognition for your brand in a crowded marketplace.
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/serv2/a6.png" alt="Image 6" />
-              <div class="text-overlay">
-                Tell your brand's story with captivating content that resonates
-                with your audience. Our content creation services craft
-                compelling narratives, engaging visuals, and informative
-                resources to keep your audience hooked and drive meaningful
-                interactions with your brand.
-              </div>
-            </div>
-            <div class="slide">
-              <img src="public/serv2/a7.png" alt="Image 7" />
-              <div class="text-overlay">
-                Engage and grow your online community with our social media
-                marketing expertise. We develop tailored strategies to boost
-                your brand's presence on social platforms, drive engagement, and
-                foster meaningful connections with your audience, ultimately
-                driving business growth and success.
-              </div>
-            </div>
-            <!-- Add more slides as needed -->
-          </div>
-          <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
-          <button class="next" aria-label="Next Slide">&rsaquo;</button>
-        </div>
-        <div class="dots"></div>
-        <!-- Dots container moved outside -->
-      </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-navbar-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <a href="#contact" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+        <span>Contact Us</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
     </div>
-    <div id="Portfolio" class="section">
-      <h1>PORTFOLIO</h1>
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slides">
-            <div class="slide">
-              <img
-                src="public/portfolios/WhatsApp Image 2024-08-08 at 11.51.32 AM.jpeg"
-                alt="Image 1"
-                style="width: 100%; height: auto"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="public/portfolios/WhatsApp Image 2024-08-08 at 11.51.32 AM.jpeg"
-                alt="Image 2"
-                style="width: 100%; height: auto"
-              />
-            </div>
-            <div class="slide">
-              <img
-                src="public/portfolios/WhatsApp Image 2024-08-08 at 11.51.32 AM.jpeg"
-                alt="Image 3"
-                style="width: 100%; height: auto"
-              />
-            </div>
-            <!-- Add more slides as needed -->
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle"></p>
+
+            <h2 class="h2 hero-title">We help you grow
+              your <span style class="gradient-text">conversions.</span></h2>
+
+            <p class="hero-text">
+              At READ Automation, our devoted team customizes smart robotics solutions to meet each client's unique needs, ensuring top-tier service. Contact us today to kickstart a conversation about your automation requirements; we're eager to support you every step of the way.
+            </p>
+
+            <button class="btn">Learn More</button>
+
           </div>
-          <button class="prev" aria-label="Previous Slide">&lsaquo;</button>
-          <button class="next" aria-label="Next Slide">&rsaquo;</button>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
+
         </div>
-        <div class="dots"></div>
-        <!-- Dots container moved outside -->
-      </div>
-    </div>
-    <div id="clients" class="section">
-      <h1>Clients</h1>
+      </section>
 
-      <div class="scroll-container">
-        <div class="scroll-images">
-          <img src="public/clients/client 2 1.png" alt="Image 1" />
-          <img src="public/clients/client 3 1.png" alt="Image 2" />
-          <img src="public/clients/client 4 1.png" alt="Image 3" />
-          <img src="public/clients/client 5 1.png" alt="Image 4" />
-          <!-- duplicates -->
-          <img src="public/clients/client 2 1.png" alt="Image 1" />
-          <img src="public/clients/client 3 1.png" alt="Image 2" />
-          <img src="public/clients/client 4 1.png" alt="Image 3" />
-          <img src="public/clients/client 5 1.png" alt="Image 4" />
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title underline">Why Our Agency</h2>
+
+            <p class="about-text">
+              READ Automation stands as a dynamic and forward-thinking enterprise committed to delivering cutting-edge Industry 4.0 solutions across diverse industries.
+            </p>
+
+            <p class="about-text">
+              Our focus lies in furnishing tailor-made, cost-effective robotics and industrial automation solutions, designed to optimized operational efficiency. Additionally, we offer expertise in Internet of Things integration and mechanical fabrication solutions. Complementing our services, we conduct comprehensive training programs covering a spectrum of Industry 4.0 related topics.
+            </p>
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">9875</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">7894</p>
+
+                <p class="stats-text">Project Lunched</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">65</p>
+
+                <p class="stats-text">Years Completed</p>
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
-      </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Services</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="telescope-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Robotics and Automation</h3>
+
+                <p class="text">
+                  We excel in crafting tailored robotics and automation solutions, from PLC programming to Quality Monitoring systems, industrial robots, and more. Our goal is to boost efficiency without breaking the bank!
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Web Development</h3>
+
+                <p class="text">
+                  Embark on a digital journey with our web development services that blend creativity and functionality. We design and build websites that not only look stunning but also deliver seamless user experiences, ensuring your online presence stands out in the digital landscape.
+                
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Internet Of Things</h3>
+
+                <p class="text">
+                  Our promise: Cutting-edge solutions for remote monitoring and control via IoT services, customized to fit your needs perfectly!
+                </p>
+
+              </div>
+            </li>
+            <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 title">Mechanical Fabrication </h3>
+
+              <p class="text">
+                At our subsidiary steel fabrication firm founded in 2010, we craft custom steel items to match your needs. Specializing in mechanical parts, we deliver precisely what you require. With a capacity of 1500 tons annually, we guarantee top-notch, on-time results!
+              </p>
+
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 title">SEO optimization</h3>
+
+              <p class="text">
+                Boost your online visibility and drive organic traffic with our SEO optimization strategies. We optimize your website to rank higher on search engines, attracting quality leads and increasing your online presence. Stay ahead of the competition and reach your target audience effectively with our proven SEO techniques.
+              </p>
+
+            </div>
+          </li>
+          <li>
+            <div class="service-card">
+
+              <div class="card-icon">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3 title">Graphic Designing</h3>
+
+              <p class="text">
+                Transforming ideas into visual masterpieces, our graphic design services bring creativity and innovation to your brand. From logos to marketing materials, we craft designs that speak volumes and leave a lasting impact on your audience.
+              </p>
+            </div>
+          </li>
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Portfolio-->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="h2 section-title underline">Portfolio</h2>
+            <div class="carousel">
+                <button class="carousel-btn left-btn">&#10094;</button>
+                <div class="port-images">
+                    <div class="port-image"><img src="./assets/images/port-1.png" alt="Image 1"></div>
+                    <div class="port-image"><img src="./assets/images/port-2.png" alt="Image 2"></div>
+                    <div class="port-image"><img src="./assets/images/port-3.png" alt="Image 3"></div>
+                    <div class="port-image"><img src="./assets/images/port-4.png" alt="Image 4"></div>
+                    <div class="port-image"><img src="./assets/images/port-5.png" alt="Image 5"></div>
+                </div>
+                <button class="carousel-btn right-btn">&#10095;</button>
+            </div>
+        </div>
+        
+          
+      </section>
+
+
+
+
+
+      <!-- 
+        - #clients
+
+      -->
+      <section class="section blog" id="blog">
+        <div class="container">
+            <h2 class="h2 section-title underline">Our Clients</h2>
+            <div class="client-scroll">
+                <div class="client-images">
+                    <div class="client-image"><img src="./assets/images/client-1.png" alt="Image 1"></div>
+                    <div class="client-image"><img src="./assets/images/client-2 .png" alt="Image 2"></div>
+                    <div class="client-image"><img src="./assets/images/client-3.png" alt="Image 3"></div>
+                    <div class="client-image"><img src="./assets/images/client-4.png" alt="Image 4"></div>
+                    <div class="client-image"><img src="./assets/images/client-1.png" alt="Image 1"></div>
+                    <div class="client-image"><img src="./assets/images/client-2 .png" alt="Image 2"></div>
+                    <div class="client-image"><img src="./assets/images/client-3.png" alt="Image 3"></div>
+                    <div class="client-image"><img src="./assets/images/client-4.png" alt="Image 4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section contact" id="contact">
+      <div class="contact-box">
+      <div class="image-container">
+        <img src="./assets/images/contact.png" alt="Contact Image">
     </div>
-
-    <div id="contact" class="section">
-      <h1>GET IN TOUCH</h1>
-
-      <h2>
-        Got a question?We'd love to hear from you. send a message and we'll
-        response you as soon as possible
-      </h2>
-
-      <div class="form-container">
-        <form id="dataForm">
-          <div class="form-group">
-            <label for="name">NAME:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="phno">PHONE NUMBER:</label>
-            <input type="number" id="phno" name="phno" required />
-          </div>
-          <div class="form-group">
-            <label for="email">EMAIL-ID:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="subject">SUBJECT:</label>
-            <input type="text" id="sub" name="subject" required />
-          </div>
-          <div class="form-group comment">
-            <label for="your comment">YOUR COMMENT:</label>
-            <textarea
-              id="your comment"
-              name="comments"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <div class="form-group">
-            <button type="button" onclick="submitForm()">SUBMIT</button>
-          </div>
+      <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Got a question?we’d love to hear from you.send us a message and we’ll respond as soon as possible.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+    
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+    
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+    
+            <button class="contact" type="submit">Submit</button>
         </form>
       </div>
     </div>
+  </div>
+  </main>
 
-    <div id="footer" class="footer">
-      <!-- Footer -->
-      <footer>
-        <div class="background-area" id="21">
-          <div class="company-name">
-            <h1>
-              <span style="color: white">READ</span
-              ><span style="color: rgb(67, 183, 221)"> AUTOMATIONS</span>
-            </h1>
-          </div>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Read Automation</a>
+
+          <p class="text">
+            6 & 7A, G1, 5th Main Road,<br>
+            BHEL Nagar, Medavakkam,<br>
+            Chennai - 600 100.
+            info@readautomation.com<br>
+            +91 999 471 6855
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
-        <div class="contact-info">
-          <strong>Address:</strong>
-          <div class="address">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy and Policy</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
             <div>
-              Registered Office<br />6 & 7A, G1, 5th Main Road,<br />BHEL Nagar,
-              Medavakkam,<br />Chennai - 600 100.
+              <a href="tel:+2484214313" class="footer-item-link">+248-421-4313</a>
+              <a href="tel:+2486871365" class="footer-item-link">+248-687-1365</a>
             </div>
-            <div style="margin-left: 25px">
-              Branch Office / Factory<br />No: 765, Kalivarthangal,
 
-              <br />Gugaiyanallore PO, Ranipet,
+          </li>
 
-              <br />Tiruvalam - 632 515.
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
             </div>
-          </div>
-          <div>
-            <strong>Phone:</strong><br /><a
-              >+91 999 471 6855 / +91 44 7969 6685</a
-            >
-          </div>
-          <div>
-            <strong>Email:</strong><br /><a href="info@readautomation.com"
-              >info@readautomation.com</a
-            >
-          </div>
-        </div>
-        <div class="footer-links">
-          <a href="#">Privacy Policy</a>|
-          <a href="#">Terms of Service</a>
-        </div>
-      </footer>
+
+            <div>
+              <a href="mailto:info@desinic.com" class="footer-item-link">info@desinic.com</a>
+              <a href="mailto:help@desinic.com" class="footer-item-link">help@desinic.com</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Pontiac, Michigan, United States of America
+            </address>
+
+          </li>
+
+        </ul>
+
+      </div>
     </div>
 
-    <script src="index.js"></script>
-  </body>
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Right Reserved
+      </p>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
